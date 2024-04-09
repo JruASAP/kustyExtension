@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === 'fetchAttachments') {
     const apiUrl = `https://zzz-drew-cristobal.api.kustomerapp.com/v1/conversations/${request.conversationId}/attachments`;
-    const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODFmYTM4YzU5ZjBhMzQzNGY4ODgxZCIsInVzZXIiOiI2NDgxZmEzOGM3YTU0MDNlZWUwMzk2MmIiLCJvcmciOiI1ZWZhMWNjNGRiODY2ZjAwMWEzYzIxNjQiLCJvcmdOYW1lIjoienp6LWRyZXctY3Jpc3RvYmFsIiwidXNlclR5cGUiOiJtYWNoaW5lIiwicG9kIjoicHJvZDEiLCJyb2xlcyI6WyJvcmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjY0ODFmYTM4YzdhNTQwM2VlZTAzOTYyYiJ9.iqk7anUF_GQno9jRUVpRAdDuW2pknBBe0d992yFXRxc'; // Store your API key securely and retrieve it here
+    const apiKey = '';
     fetch(apiUrl, {
       method: 'GET',
       headers: {
